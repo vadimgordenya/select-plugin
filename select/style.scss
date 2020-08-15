@@ -35,14 +35,8 @@ $height: 46px;
         height: $height;
         display: flex;
         align-items: center;
+        justify-content: space-between;
         padding: 0 1rem;
-
-        .fa-chevron-down {
-            position: absolute;
-            top: 50%;
-            right: 15px;
-            transform: translateY(-50%);
-        }
     }
 
     &__dropdown {
@@ -55,6 +49,7 @@ $height: 46px;
         border-radius: 5px;
         box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
         display: none;
+        max-height: 200px;
     }
 
     &__list {
@@ -71,6 +66,9 @@ $height: 46px;
 
         &:hover {
             background: rgba(0, 0, 0, 0.3);
+        }
+        &.selected {
+            background: bisque;
         }
     }
 }
